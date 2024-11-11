@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Review Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="C:\Users\divya\OneDrive\Desktop\DIS\CourseReview\images\logo.png" alt="USF Logo" class="logo">
+        <h1>Course Review Platform</h1>
+        <!-- Navigation Tabs -->
+        <nav>
+            <button class="tab-button" onclick="openTab('home')">Home</button>
+            <button class="tab-button" onclick="openTab('reviews')">Reviews</button>
+            <button class="tab-button" onclick="openTab('about')">About Us</button>
+        </nav>
+      </header>
+
+  
+
+  <!-- Content Sections -->
+  <section id="home" class="tab-content">
+    <h2>Welcome to the Course Review Platform</h2>
+    <p>Our platform helps students share their experiences with courses and professors. Start by navigating to the "Reviews" tab to see what others have shared or submit your own review!</p>
+  </section>
+
+  <section id="reviews" class="tab-content" style="display: none;">
+    <h2>Course Reviews</h2>
+    <div id="reviewsContainer">
+      <p>No reviews yet. Be the first to share your experience!</p>
+    </div>
+  </section>
+
+  <section id="about" class="tab-content" style="display: none;">
+    <h2>About Us</h2>
+    <p>We are a platform created by students, for students, to help share honest reviews about college courses and professors.</p>
+    
+    <div class="team-container">
+      <div class="team-member">
+        <img src="C:\Users\divya\OneDrive\Desktop\DIS\CourseReview\images\divya.jpg" alt="Akshata">
+        <h3>Akshata</h3>
+        <p>Founder &amp; CEO</p>
+        <p>John leads our team with a vision to make course reviews accessible for all students.</p>
+      </div>
+      <div class="team-member">
+        <img src="C:\Users\divya\OneDrive\Desktop\DIS\CourseReview\images\divya.jpg" alt="Divya">
+        <h3>Divya</h3>
+        <p>Chief Technical Officer</p>
+        <p>Jane is responsible for our platform's technical architecture and oversees development.</p>
+      </div>
+      <div class="team-member">
+        <img src="member3.jpg" alt="Gopi">
+        <h3>Gopi</h3>
+        <p>Community Manager</p>
+        <p>Emily engages with students and gathers valuable feedback for our platform improvements.</p>
+      </div>
+      <div class="team-member">
+        <img src="member4.jpg" alt="Nishchitha">
+        <h3>Nishchitha</h3>
+        <p>Product Designer</p>
+        <p>Michael designs user-friendly interfaces to ensure a seamless experience for students.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
