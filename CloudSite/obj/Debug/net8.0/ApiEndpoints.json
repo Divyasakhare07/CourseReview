@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "StudentReviews.Controllers.ReviewsController",
+    "Method": "CreateReview",
+    "RelativePath": "api/Reviews",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "review",
+        "Type": "StudentReviews.Models.Reviews",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

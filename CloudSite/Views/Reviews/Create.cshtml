@@ -1,0 +1,31 @@
+﻿@model StudentReviews.Models.Reviews
+
+@{
+    ViewData["Title"] = "Create Review";
+}
+
+<h2>Create Review</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Course"></label>
+        <input asp-for="Course" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Professor"></label>
+        <input asp-for="Professor" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Comment"></label>
+        <textarea asp-for="Comment" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="OverallRating"></label>
+        <input asp-for="OverallRating" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
