@@ -369,3 +369,106 @@ function saveChanges(reviewId) {
 document.addEventListener("DOMContentLoaded", loadReviews);
 
 
+//////////////////////////////////////////////////////
+
+// Average Rating by Course (Bar Chart)
+const avgRatingData = {
+  labels: ["App Dev for Analytics","Machine Learning", "Data Mining", "ADBMS", "Deep Learning", "Project Management"],
+  datasets: [{
+      label: "Average Rating",
+      data: [4.9, 4.5, 4.7, 3.8, 4.2, 3.6],
+      //backgroundColor: "#4caf50"
+      backgroundColor: "#80B0A6", // Set bar color
+            borderColor: "#80B0A6", // Set border color to match
+            borderWidth: 1 // Optional: Adjust border width
+  }]
+};
+
+new Chart(document.getElementById("avgRatingChart"), {
+  type: "bar",
+  data: avgRatingData,
+  options: {
+      plugins: { title: { display: true, text: "Average Rating by Course" } },
+      responsive: true,
+      scales: { y: { beginAtZero: true, max: 5 } }
+  }
+});
+
+
+
+// Difficulty Level Data by Course
+const difficultyLevelData = {
+  "App Dev for Analytics": [2, 4, 19, 9, 14],
+  "Machine Learning": [2, 3, 10, 20, 15],
+  "Data Mining": [3, 5, 12, 18, 10],
+  "ADBMS": [1, 2, 7, 15, 25],
+  "Deep Learning": [4, 6, 8, 10, 12],
+  "Project Management": [5, 10, 8, 15, 5]
+};
+
+// Initialize Polar Area Chart
+let polarChart;
+function createPolarChart(data) {
+  const ctx = document.getElementById("difficultyPolarChart").getContext("2d");
+  polarChart = new Chart(ctx, {
+      type: "polarArea",
+      data: {
+          labels: ["Very Easy", "Easy", "Moderate", "Hard", "Very Hard"],
+          datasets: [{
+              data: data,
+              backgroundColor: ["#4bc0c0", "#36a2eb", "#ffcd56", "#ff6384", "#c9cbcf"]
+          }]
+      },
+      options: {
+          plugins: {
+              title: { display: true, text: "Difficulty Level Distribution by Course" },
+              legend: { position: "top" }
+          }
+      }
+  });
+}
+
+// Function to Update Polar Chart Based on Selected Course
+function updatePolarChart() {
+  const selectedCourse = document.getElementById("courseSelect").value;
+  const data = difficultyLevelData[selectedCourse];
+
+  if (polarChart) {
+      polarChart.data.datasets[0].data = data;
+      polarChart.update();
+  } else {
+      createPolarChart(data);
+  }
+}
+
+// Load initial chart for the default selected course
+document.addEventListener("DOMContentLoaded", () => {
+  updatePolarChart();  // Initialize with the first course's data
+});
+
+
+// Top Skills Gained (Horizontal Bar Chart)
+const skillsData = {
+  labels: ["C#", "Python", "Machine Learning", "Data Analysis", "SQL", "Project Management"],
+  datasets: [
+      {
+          label: "Frequency of Skills Gained",
+          data: [80, 50, 35, 45, 30, 20],
+          backgroundColor: "#DBE442", // Set bar color to #006484
+          borderColor: "#DBE442", // Set border color to match
+          borderWidth: 1 // Optional: Adjust border width if desired
+      }
+  ]
+};
+
+new Chart(document.getElementById("skillsBarChart"), {
+  type: "bar",
+  backgroundColor: "#DBE442", // Set bar color
+  data: skillsData,
+  options: {
+      indexAxis: 'y',
+      plugins: { title: { display: true, text: "Top Skills Gained from Courses" } },
+      responsive: true,
+      scales: { x: { beginAtZero: true } }
+  }
+});

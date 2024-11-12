@@ -20,7 +20,9 @@
         </nav>
       </header>
 
-  
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      
 
   <!-- Content Sections -->
   <section id="home" class="tab-content">
@@ -97,12 +99,45 @@
     </div>
 </section>
 
-  <section id="Data Model" class="tab-content" style="display: none;">
-    <h2>Data Model</h2>
-    <div id="dataContainer">
-      <p>No Data Model. Be the first to share your experience!</p>
-    </div>
-  </section>
+<section id="Data Model" class="tab-content" style="display: none;">
+  <h2 style="text-align: center;">Data Analytics</h2>
+
+  <!-- Card for Average Rating by Course -->
+  <div class="card-container">
+  <div class="card">
+      <h3>Average Rating by Course</h3>
+      <canvas id="avgRatingChart" width="400" height="300"></canvas>
+  </div>
+  </div>
+
+  <!-- Card for Difficulty Level by Course with Dropdown -->
+  <div class="card-container">
+  <div class="card">
+      <div style="text-align: center; margin-bottom: 10px;">
+          <label for="courseSelect">Select Course:</label>
+          <select id="courseSelect" onchange="updatePolarChart()">
+            <option value="App Dev for Analytics">App Dev for Analytics</option>
+              <option value="Machine Learning">Machine Learning</option>
+              <option value="Data Mining">Data Mining</option>
+              <option value="Advanced Database Management">Advanced Database Management</option>
+              <option value="Deep Learning">Deep Learning</option>
+              <option value="Project Management">Project Management</option>
+          </select>
+      </div>
+      <h3>Difficulty Level Distribution by Course</h3>
+      <canvas id="difficultyPolarChart" width="400" height="300"></canvas>
+  </div>
+  </div>
+
+  <!-- Card for Top Skills Gained -->
+  <div class="card-container">
+  <div class="card">
+      <h3>Top Skills Gained from Courses</h3>
+      <canvas id="skillsBarChart" width="400" height="300"></canvas>
+  </div>
+  </div>
+</section>
+
 
   <section id="about" class="tab-content" style="display: none;">
     <h2 style="text-align: center;">About Us</h2>
