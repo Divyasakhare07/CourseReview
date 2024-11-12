@@ -1,4 +1,4 @@
-# Course and Professor Review Website
+# RateMyCourse
 
 ## Overview
 
