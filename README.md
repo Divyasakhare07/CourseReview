@@ -16,7 +16,7 @@ The Course and Professor Review website is a platform where students can review 
 ## Technology Stack
 
 - *Frontend*: HTML, CSS, JavaScript
-- *Database*: MongoDB (for storing review data)
+- *Database*: Local Storage  (for storing review data)
 - *Version Control*: GitHub for collaboration and version management
 
 ## Installation
@@ -32,8 +32,7 @@ The Course and Professor Review website is a platform where students can review 
 
 - *Home Page*: Start by signing up or logging in to explore the full features.
 - *Submit Review*: Enter course details and rate professors using the form on this page.
-- *Data Visualization*: View charts representing reviews to make informed decisions.
-- *Q&A*: Browse through frequently asked questions.
+- *Data Analytics*: View charts representing reviews to make informed decisions.
 - *About Us*: Learn about our team and view our data model, which includes at least two one-to-many relationships.
 
 ## Future Enhancements
