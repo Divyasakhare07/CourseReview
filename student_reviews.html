@@ -30,10 +30,72 @@
 
   <section id="reviews" class="tab-content" style="display: none;">
     <h2>Course Reviews</h2>
-    <div id="reviewsContainer">
-      <p>No reviews yet. Be the first to share your experience!</p>
+    <!-- Button to toggle form visibility -->
+    <button onclick="toggleReviewForm()">Submit Your Review</button>
+
+    <!-- Collapsible review submission form -->
+    <div id="reviewFormContainer" style="display: none; margin-top: 15px;">
+        <form id="reviewForm">
+            <label for="studentName">Your Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" required>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" onchange="updateCourseOptions()">
+                <option value="">Select Department</option>
+                <option value="AIBA">AIBA</option>
+                <option value="CIS">CIS</option>
+                <option value="MECH">MECH</option>
+            </select>
+
+            <label for="courseName">Course:</label>
+            <select id="courseName" name="courseName" onchange="updateProfessorOptions()" required>
+                <option value="">Select Course</option>
+            </select>
+
+            <label for="professorName">Professor:</label>
+            <select id="professorName" name="professorName" required>
+                <option value="">Select Professor</option>
+            </select>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" rows="4" required></textarea>
+
+            <label for="difficultyLevel">Difficulty Level:</label>
+            <select id="difficultyLevel" name="difficultyLevel" required>
+                <option value="5">5 - Very Hard</option>
+                <option value="4">4 - Hard</option>
+                <option value="3">3 - Moderate</option>
+                <option value="2">2 - Easy</option>
+                <option value="1">1 - Very Easy</option>
+            </select>
+
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+            
+            <button type="button" id="submitButton" onclick="submitReview()">Submit Review</button>
+            <button type="button" id="cancelButton" onclick="cancelForm()">Cancel</button>
+
+        </form>
     </div>
-  </section>
+
+    <!-- Container for displaying reviews -->
+    <div id="reviewsContainer" style="margin-top: 20px;">
+        <!-- Reviews will be dynamically loaded here -->
+        
+    </div>
+</section>
 
   <section id="Data Model" class="tab-content" style="display: none;">
     <h2>Data Model</h2>

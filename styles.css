@@ -1,110 +1,253 @@
 /* Body and Base Styles */
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #d0d3d4;
-    color: #006747;
-  }
-  
-  header {
-    text-align: center;
-    background-color: #006747;
-    padding: 20px;
-    color: white;
-    margin-bottom: 20px;
-  }
-  
-  h1, h2 {
-    color: #006747;
-  }
-  
-  /* Tab Navigation Styles */
-  nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-  }
-  
-  .tab-button {
-    background-color: #006747;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 5px;
-  }
-  
-  .tab-button:hover {
-    background-color: #000000;
-    color: #006747;
-  }
-  
-  /* Content Section Styles */
-  .tab-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #d0d3d4;
+  color: #006747;
+}
 
-  /* About Us - Team Member Styling */
-.team-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .team-member {
-    text-align: center;
-    max-width: 200px;
-    background-color: #d0d3d4;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .team-member h3 {
-    color: #006747;
-    margin-bottom: 5px;
-  }
-  
-  .team-member p {
-    color: #006747;
-    font-size: 14px;
-    margin: 5px 0;
-  }
-
-  /* Header and Logo Styling */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #006747;
-    padding: 20px;
-    color: white;
-    position: relative;
-  }
-  
-  header .logo {
-    position: absolute;
-    left: 20px;
-    width: 250px; /* Adjust size as needed */
-    height: auto;
-  }
-  
-  header h1 {
-    margin-left: 80px; /* Space to the right of the logo */
-  }
-  
-  
+  text-align: center;
+  background-color: #006747;
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  color: #006747;
+}
+
+/* Tab Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.tab-button {
+  background-color: #006747;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.tab-button:hover {
+  background-color: #000000;
+  color: #006747;
+}
+
+/* Content Section Styles */
+.tab-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us - Team Member Styling */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+  background-color: #d0d3d4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  color: #006747;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  color: #006747;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Header and Logo Styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #006747;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+header .logo {
+  position: absolute;
+  left: 20px;
+  width: 250px; /* Adjust size as needed */
+  height: auto;
+}
+
+header h1 {
+  margin-left: 80px; /* Space to the right of the logo */
+}
+/* Button to toggle review form */
+button {
+  background-color: #006747;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #004b32;
+}
+
+/* Review form styling */
+#reviewFormContainer {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#reviewForm label {
+  display: block;
+  margin-top: 10px;
+  color: #006747;
+}
+
+#reviewForm input, 
+#reviewForm select, 
+#reviewForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#reviewForm textarea {
+  resize: vertical;
+}
+
+
+/* Review Card Styling */
+.review-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;  /* Fixed width */
+  min-height: 400px;  /* Minimum height to ensure consistency */
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Header styling within each review card */
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-name {
+  font-weight: bold;
+  color: #006747;
+  font-size: 18px;
+}
+
+/* Course and professor styling */
+.review-course {
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.review-professor {
+  color: #555;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Star rating styling */
+.rating-stars {
+  color: #FFD700; /* Gold color for stars */
+  font-size: 20px;
+}
+
+/* Comment section */
+.review-comment {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  font-style: italic; /* Italicized for emphasis */
+}
+
+/* Skills section styling */
+.review-skills {
+  margin-top: 10px;
+  list-style-type: square;
+  padding-left: 20px;
+  color: #006747;
+  font-weight: bold;
+}
+
+.review-skills li {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Button styling within review cards */
+button {
+  background-color: #006747;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004b32; /* Darker green on hover */
+}
+
