@@ -217,7 +217,7 @@ button:hover {
 
 /* Star rating styling */
 .rating-stars {
-  color: #FFD700; /* Gold color for stars */
+  color: #FFD700; 
   font-size: 20px;
 }
 
@@ -226,7 +226,7 @@ button:hover {
   margin-top: 10px;
   font-size: 14px;
   color: #333;
-  font-style: italic; /* Italicized for emphasis */
+  font-style: italic; 
 }
 
 /* Skills section styling */
