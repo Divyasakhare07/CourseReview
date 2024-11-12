@@ -9,8 +9,7 @@ The Course and Professor Review website is a platform where students can review 
 - *Home Page*: A welcoming page that includes login and signup functionalities.
 - *Reviews Page*: Displays course and professor reviews fetched from the database.
 - *Submit Review Page*: A responsive form to add reviews to the database.
-- *Data Visualization*: Visual representation of review data by course for better decision-making.
-- *Q&A Page*: Common questions answered, serving as a guide for new users.
+- *Data Analytics*: Visual representation of review data by course for better decision-making.
 - *About Us Page*: Information about the team members, their contributions, and the data model used.
 
 ## Technology Stack
@@ -41,15 +40,6 @@ The Course and Professor Review website is a platform where students can review 
 
 This static version will be the foundation for a dynamic site to be hosted on Azure. Planned improvements include fully dynamic CRUD operations and enhanced interactivity.
 
-## Contribution
-
-1. Fork the repository on GitHub.
-2. Clone your forked repository and create a new branch for each feature or fix:
-    bash
-    git clone <your_forked_repo_url>
-    git checkout -b <feature-branch>
-    
-3. Commit changes with clear messages and open a pull request for review.
 
 ## Data Model
 
