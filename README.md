@@ -22,11 +22,13 @@ The Course and Professor Review website is a platform where students can review 
 ## Installation
 
 1. Clone the repository from GitHub:
-    bash
+   
+   ```bash
     git clone <repository_url>
+    ```
     
-2. Navigate to the project folder.
-3. Open the HTML files in a browser to interact with the static website locally.
+3. Navigate to the project folder.
+4. Open the HTML files in a browser to interact with the static website locally.
 
 ## Usage
 
