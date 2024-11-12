@@ -240,9 +240,68 @@ function displayReview(review) {
 
 // Function to load all reviews from Local Storage when the page loads
 function loadReviews() {
+  // Array of hardcoded reviews
+  const hardcodedReviews = [
+    {
+      id: 1,
+      studentName: "Enola",
+      courseName: "Machine Learning",
+      professorName: "T. Smith (P)",
+      rating: 4,
+      difficultyLevel: 5,
+      comments: "Interactive lectures. Assignments cover all the technology skilling.",
+      skills: ["Python", "Machine learning", "NumPy", "Pandas"]
+    },
+    {
+      id: 2,
+      studentName: "Alex",
+      courseName: "Data Mining",
+      professorName: "K. Garimella (P)",
+      rating: 5,
+      difficultyLevel: 4,
+      comments: "Thoroughly engaging with real-world case studies.",
+      skills: ["SQL", "Data Analysis", "Machine Learning"]
+    },
+    {
+      id: 3,
+      studentName: "Maria",
+      courseName: "Advanced Database Management",
+      professorName: "H. Hyman (P)",
+      rating: 3,
+      difficultyLevel: 5,
+      comments: "Challenging content but rewarding.",
+      skills: ["Database Management", "SQL", "Oracle"]
+    },
+    {
+      id: 4,
+      studentName: "John",
+      courseName: "Deep Learning for Business Analytics",
+      professorName: "T. Ma",
+      rating: 4,
+      difficultyLevel: 4,
+      comments: "Practical applications make learning easy.",
+      skills: ["Python", "TensorFlow", "Data Processing"]
+    },
+    {
+      id: 5,
+      studentName: "Sophia",
+      courseName: "Project Management",
+      professorName: "W. McNair (P)",
+      rating: 3,
+      difficultyLevel: 3,
+      comments: "Good for learning PM fundamentals, a bit theoretical.",
+      skills: ["Project Management", "Team Collaboration", "Communication"]
+    }
+  ];
+
+  // Display each hardcoded review
+  hardcodedReviews.forEach(displayReview);
+
+  // Load any additional reviews from Local Storage
   const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
   reviews.forEach(displayReview);
 }
+
 
 // Function to delete a review
 function deleteReview(reviewId) {
@@ -308,3 +367,5 @@ function saveChanges(reviewId) {
 
 // Load reviews when the page loads
 document.addEventListener("DOMContentLoaded", loadReviews);
+
+
