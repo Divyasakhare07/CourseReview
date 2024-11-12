@@ -41,6 +41,15 @@ nav {
   color: #006747;
 }
 
+/* Home page image*/
+#home .responsive-image {
+    width: 100%;       /* Makes the image fit the width of its container */
+    height: auto;      /* Maintains the image's aspect ratio */
+    max-width: 1000px;  /* Limits the maximum width if needed */
+    display: block;
+    margin: 0 auto;    /* Centers the image */
+}
+
 /* Content Section Styles */
 .tab-content {
   background-color: white;
@@ -250,4 +259,59 @@ button {
 button:hover {
   background-color: #004b32; /* Darker green on hover */
 }
+
+
+
+
+
+
+
+
+
+.best-courses {
+    font-family: Arial, sans-serif;
+}
+
+.course-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    
+    
+}
+
+.course-card {
+    width: 200px;
+    border: 1px solid #004b32;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.course-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.stars {
+    color: #4CAF50;
+}
+
+
+
 
