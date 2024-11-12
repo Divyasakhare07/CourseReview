@@ -1,4 +1,4 @@
-# Course and Professor Review Website
+# RateMyCourse
 
 ## Overview
 
@@ -16,24 +16,25 @@ The Course and Professor Review website is a platform where students can review 
 ## Technology Stack
 
 - *Frontend*: HTML, CSS, JavaScript
-- *Database*: MongoDB (for storing review data)
+- *Database*: Local Storage  (for storing review data)
 - *Version Control*: GitHub for collaboration and version management
 
 ## Installation
 
 1. Clone the repository from GitHub:
-    bash
+   
+   ```bash
     git clone <repository_url>
+    ```
     
-2. Navigate to the project folder.
-3. Open the HTML files in a browser to interact with the static website locally.
+3. Navigate to the project folder.
+4. Open the HTML files in a browser to interact with the static website locally.
 
 ## Usage
 
 - *Home Page*: Start by signing up or logging in to explore the full features.
 - *Submit Review*: Enter course details and rate professors using the form on this page.
-- *Data Visualization*: View charts representing reviews to make informed decisions.
-- *Q&A*: Browse through frequently asked questions.
+- *Data Analytics*: View charts representing reviews to make informed decisions.
 - *About Us*: Learn about our team and view our data model, which includes at least two one-to-many relationships.
 
 ## Future Enhancements
