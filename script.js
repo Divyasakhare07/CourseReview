@@ -33,7 +33,10 @@ reviewCard.innerHTML = `
     <div class="review-header">
         <h3>${studentName}</h3>
         <p>${courseName} - ${professorName}</p>
-        <span class="rating">${"★".repeat(rating)}${"☆".repeat(5 - rating)}</span>
+        <div class="rating-stars">
+    ${"&#9733;".repeat(review.rating)}${"&#9734;".repeat(5 - review.rating)}
+</div>
+
     </div>
     <p>${comments}</p>
 `;
@@ -219,7 +222,7 @@ function displayReview(review) {
   reviewCard.innerHTML = `
       <div class="review-header">
           <div class="review-name">${review.studentName}</div>
-          <div class="rating-stars">${"★".repeat(review.rating)}${"☆".repeat(5 - review.rating)}</div>
+        <div class="rating-stars">${"&#9733;".repeat(review.rating)}${"&#9734;".repeat(5 - review.rating)}</div>
       </div>
       <div class="review-course">${review.courseName}</div>
       <div class="review-professor">${review.professorName}</div>
