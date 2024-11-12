@@ -50,12 +50,6 @@ This static version will be the foundation for a dynamic site to be hosted on Az
     
 3. Commit changes with clear messages and open a pull request for review.
 
-## Team Contributions
-
-- *[Member Name 1]*: Responsible for frontend design, reviews page, and data visualization.
-- *[Member Name 2]*: Data model planning, MongoDB integration, and CRUD operations.
-- *[Member Name 3]*: JavaScript interactivity, form validation, and Q&A section.
-
 ## Data Model
 
 The data model used in this project includes normalized entities (e.g., Courses and Professors) with one-to-many relationships to structure review data efficiently.
